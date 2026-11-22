@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURELIA Luxury Resort</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">AURELIA</div>
+
+<ul class="nav-links">
+<li><a href="#rooms">Suites</a></li>
+<li><a href="#amenities">Amenities</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="btn-gold" id="openBooking">
+Book Stay
+</button>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<span class="hotel-rating">★★★★★ Luxury Resort</span>
+
+<h1>
+Experience Timeless Luxury
+</h1>
+
+<p>
+Escape into elegance with world-class accommodations,
+private dining experiences, and breathtaking ocean views.
+</p>
+
+<a href="#rooms" class="hero-btn">
+Explore Suites
+</a>
+
+</div>
+
+</section>
+
+<section id="rooms" class="rooms">
+
+<h2 class="section-title">Featured Suites</h2>
+
+<div class="room-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+<h3>Deluxe Ocean Suite</h3>
+<p>Panoramic sea views and luxury amenities.</p>
+<span>$350 / Night</span>
+</div>
+
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+<h3>Executive Residence</h3>
+<p>Designed for business and leisure travelers.</p>
+<span>$550 / Night</span>
+</div>
+
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+<h3>Presidential Suite</h3>
+<p>Pure sophistication with a private terrace.</p>
+<span>$950 / Night</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="amenities" class="amenities">
+
+<h2 class="section-title">Exclusive Amenities</h2>
+
+<div class="features">
+
+<div class="feature">
+🏊
+<h3>Infinity Pool</h3>
+</div>
+
+<div class="feature">
+🍽️
+<h3>Fine Dining</h3>
+</div>
+
+<div class="feature">
+🧖
+<h3>Spa Wellness</h3>
+</div>
+
+<div class="feature">
+🚗
+<h3>Valet Parking</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews" class="reviews">
+
+<h2 class="section-title">Guest Experiences</h2>
+
+<div class="review-container">
+
+<div class="review active">
+“Absolutely stunning. Every detail exceeded expectations.”
+</div>
+
+<div class="review">
+“One of the most luxurious resorts we have stayed in.”
+</div>
+
+<div class="review">
+“Exceptional service and unforgettable views.”
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Get In Touch</h2>
+
+<form id="contactForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required
+    >
+
+    <textarea
+        id="message"
+        placeholder="Message"
+        required
+    ></textarea>
+
+    <button type="submit">
+        Send via WhatsApp
+    </button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h2>AURELIA RESORT</h2>
+
+<p>
+Luxury Redefined
+</p>
+
+</footer>
+
+<div class="modal" id="bookingModal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h2>Reserve Your Stay</h2>
+
+<input type="date">
+
+<input type="date">
+
+<select>
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+</select>
+
+<button class="btn-gold">
+Check Availability
+</button>
+
+</div>
+
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
